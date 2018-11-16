@@ -13,3 +13,10 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |combination_arr|
+    if combination_arr.all? { |combination| combination == "X" || combination == "O"}
+      "WINNER"
+    end
+end
