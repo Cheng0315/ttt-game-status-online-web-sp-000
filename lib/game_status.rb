@@ -25,7 +25,7 @@ def won?(board)
   false
 end
 
-def full(board)
+def full?(board)
   if won?(board) == false
     true
   else
