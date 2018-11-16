@@ -16,8 +16,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination_arr|
-    if combination_arr.all? { |combination| combination == "X" || combination == "O"}
-      "WINNER"
-    end
+    combination_arr.all? { |idx| board[idx] == "X" }
   end
 end
