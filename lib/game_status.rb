@@ -52,7 +52,7 @@ end
 
 def winner(board)
   winning_combination = won?(board)
-  if winning_combination == winning_combination[0] == "X"
+  if winning_combination == Array && winning_combination[0] == "X"
     "X"
   elsif winning_combination == Array && winning_combination[0] == "O"
     "O"
