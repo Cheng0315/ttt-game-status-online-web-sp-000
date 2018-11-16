@@ -52,11 +52,11 @@ end
 
 def winner(board)
   idx = won?(board)
-  if board[idx[0]] == "X"
+  if idx == false
+    nil
+  elsif board[idx[0]] == "X"
     return "X"
   elsif board[idx[0]] == "O"
     return "O"
-  else
-    nil
   end
 end
