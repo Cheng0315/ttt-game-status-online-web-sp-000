@@ -41,3 +41,11 @@ def draw?(board)
     false
   end
 end
+
+def over?(board)
+  if board.any? { |ele| ele == " " || ele =="" || ele == nil}
+    false
+  else
+    true
+  end
+end
