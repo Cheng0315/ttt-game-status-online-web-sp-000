@@ -52,9 +52,9 @@ end
 
 def winner(board)
   idx = won?(board)[0]
-  if won?(board) == Array && won?(board)[0] == "X"
+  if won?(board) == Array && board[idx] == "X"
     "X"
-  elsif won?(board) == Array && won?(board)[0] == "O"
+  elsif won?(board) == Array && board[idx] == "O"
     "O"
   else
     nil
