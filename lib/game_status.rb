@@ -19,4 +19,5 @@ def won?(board)
     if combination_arr.all? { |combination| combination == "X" || combination == "O"}
       "WINNER"
     end
+  end
 end
