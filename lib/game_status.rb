@@ -24,3 +24,11 @@ def won?(board)
   end
   false
 end
+
+def full(board)
+  if won?(board) == false
+    true
+  else
+    false
+  end
+end
