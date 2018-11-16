@@ -26,9 +26,10 @@ def won?(board)
 end
 
 def full?(board)
-  if won?(board) == false
-    true
-  elsif board.any? { |ele| ele == " " || ele =="" || ele == nil}
+
+  if board.any? { |ele| ele == " " || ele =="" || ele == nil}
     false
+  else
+    true
   end
 end
