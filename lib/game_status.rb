@@ -43,7 +43,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board).class == Array
+  if won?(board).class == Array || draw?(board)
     true
   else
     false
