@@ -51,12 +51,12 @@ def over?(board)
 end
 
 def winner(board)
-  winning_commbination = won?(board)
-  if winning_commbination == false
+  winn_commbination = won?(board)
+  if win_commbination == false
     nil
-  elsif board[winning_commbination[0]] == "X"
+  elsif board[win_commbination[0]] == "X"
     return "X"
-  elsif board[winning_commbination[0]] == "O"
+  elsif board[win_commbination[0]] == "O"
     return "O"
   end
 end
