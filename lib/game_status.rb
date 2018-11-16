@@ -33,11 +33,11 @@ def full?(board)
   end
 end
 
-def draw(board)
+def draw?(board)
   if board.none? { |ele| ele == " " || ele =="" || ele == nil} &&
     won?(board) == false
     true
-  else 
+  else
     false
   end
 end
