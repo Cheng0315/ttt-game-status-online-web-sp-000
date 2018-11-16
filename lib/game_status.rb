@@ -51,7 +51,7 @@ def over?(board)
 end
 
 def winner(board)
-  winn_commbination = won?(board)
+  win_commbination = won?(board)
   if win_commbination == false
     nil
   elsif board[win_commbination[0]] == "X"
