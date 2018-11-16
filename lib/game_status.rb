@@ -21,7 +21,7 @@ def won?(board)
     elsif combination_arr.all? { |idx| board[idx] == "O" }
       return combination_arr
     else
-      false
+      return false
     end
   end
 end
