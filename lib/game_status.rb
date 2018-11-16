@@ -45,9 +45,7 @@ end
 def over?(board)
   if won?(board).class == Array
     true
-  elsif board.any? { |ele| ele == " " || ele =="" || ele == nil}
-    false
   else
-    true
+    false
   end
 end
