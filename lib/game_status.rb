@@ -26,10 +26,18 @@ def won?(board)
 end
 
 def full?(board)
-
   if board.any? { |ele| ele == " " || ele =="" || ele == nil}
     false
   else
     true
+  end
+end
+
+def draw(board)
+  if board.none? { |ele| ele == " " || ele =="" || ele == nil} &&
+    won?(board) == false
+    true
+  else 
+    false
   end
 end
