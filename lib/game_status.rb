@@ -51,10 +51,10 @@ def over?(board)
 end
 
 def winner(board)
-  winning_combination = won?(board)
-  if winning_combination == Array && winning_combination[0] == "X"
+  idx = won?(board)[0]
+  if won?(board) == Array && won?(board)[0] == "X"
     "X"
-  elsif winning_combination == Array && winning_combination[0] == "O"
+  elsif won?(board) == Array && won?(board)[0] == "O"
     "O"
   else
     nil
