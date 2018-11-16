@@ -43,7 +43,9 @@ def draw?(board)
 end
 
 def over?(board)
-  if board.any? { |ele| ele == " " || ele =="" || ele == nil}
+  if won?(board) == true
+    true
+  elsif board.any? { |ele| ele == " " || ele =="" || ele == nil}
     false
   else
     true
